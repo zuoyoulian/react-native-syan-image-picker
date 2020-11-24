@@ -142,7 +142,7 @@ RCT_EXPORT_METHOD(openVideoPicker:(NSDictionary *)options callback:(RCTResponseS
     imagePickerVc.allowCrop = isCrop;   // 裁剪
     imagePickerVc.autoDismiss = NO;
     imagePickerVc.showSelectedIndex = showSelectedIndex;
-    imagePickerVc.modalPresentationStyle = UIModalPresentationFullScreen;
+//    imagePickerVc.modalPresentationStyle = UIModalPresentationFullScreen;
 
     if (isRecordSelected) {
         imagePickerVc.selectedAssets = self.selectedAssets; // 当前已选中的图片
@@ -231,7 +231,7 @@ RCT_EXPORT_METHOD(openVideoPicker:(NSDictionary *)options callback:(RCTResponseS
     imagePickerVc.alwaysEnableDoneBtn = YES;
     imagePickerVc.allowPickingMultipleVideo = isGif ? YES : allowPickingMultipleVideo;
     imagePickerVc.allowCrop = isCrop;   // 裁剪
-    imagePickerVc.modalPresentationStyle = UIModalPresentationFullScreen;
+//    imagePickerVc.modalPresentationStyle = UIModalPresentationFullScreen;
 
     if (isRecordSelected) {
         imagePickerVc.selectedAssets = self.selectedAssets; // 当前已选中的图片
